@@ -47,7 +47,7 @@
 		0DE09EE922E97B450012F2E3 /* SCMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EBA22E97B440012F2E3 /* SCMoreViewController.swift */; };
 		0DE09EEA22E97B450012F2E3 /* SCSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EBC22E97B440012F2E3 /* SCSearchViewController.swift */; };
 		0DE09EEB22E97B450012F2E3 /* SCNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EBE22E97B440012F2E3 /* SCNewsViewController.swift */; };
-		0DE09EEC22E97B450012F2E3 /* SCStockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EC022E97B440012F2E3 /* SCStockViewController.swift */; };
+		0DE09EEC22E97B450012F2E3 /* SCSpeciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EC022E97B440012F2E3 /* SCSpeciesViewController.swift */; };
 		0DE09EED22E97B450012F2E3 /* main.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DE09EC222E97B440012F2E3 /* main.json */; };
 		0DE09EEE22E97B450012F2E3 /* SCNavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EC322E97B440012F2E3 /* SCNavigationViewController.swift */; };
 		0DE09EEF22E97B450012F2E3 /* SCMainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EC422E97B440012F2E3 /* SCMainViewController.swift */; };
@@ -56,6 +56,21 @@
 		0DE09EF622E9811D0012F2E3 /* SCNetworkManager+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EF522E9811D0012F2E3 /* SCNetworkManager+extension.swift */; };
 		0DE09EF922E983520012F2E3 /* SCSpeciesDataItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EF822E983520012F2E3 /* SCSpeciesDataItem.swift */; };
 		0DE09EFB22E9925B0012F2E3 /* species.json in Resources */ = {isa = PBXBuildFile; fileRef = 0DE09EFA22E9925A0012F2E3 /* species.json */; };
+		0DF4FF5822EA6FF50087A528 /* SCSpeciesDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4FF5722EA6FF50087A528 /* SCSpeciesDisplayView.swift */; };
+		0DF4FF5A22EA70070087A528 /* SCSpeciesDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4FF5922EA70070087A528 /* SCSpeciesDisplayView.xib */; };
+		0DF4FF5C22EA7C060087A528 /* SCSpeciesViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4FF5B22EA7C060087A528 /* SCSpeciesViewCell.swift */; };
+		0DF4FF5E22EA7C160087A528 /* SCSpeciesViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4FF5D22EA7C160087A528 /* SCSpeciesViewCell.xib */; };
+		0DF4FF6022EA7FBE0087A528 /* SCSpeciesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4FF5F22EA7FBE0087A528 /* SCSpeciesViewModel.swift */; };
+		0DF4FF6322EAB6CC0087A528 /* SCSpeciesDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4FF6222EAB6CC0087A528 /* SCSpeciesDetailsController.swift */; };
+		0DF4FF6522EAB6E40087A528 /* SCSpeciesDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4FF6422EAB6E40087A528 /* SCSpeciesDetailsController.xib */; };
+		0DF4FF6822EAC5660087A528 /* SCSpeciesAboutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4FF6722EAC5660087A528 /* SCSpeciesAboutController.swift */; };
+		0DF4FF6C22EAC7090087A528 /* SCSpeciesImagesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4FF6B22EAC7090087A528 /* SCSpeciesImagesCollectionView.swift */; };
+		0DF4FF6E22EAC71E0087A528 /* SCSpeciesImagesCollectionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4FF6D22EAC71E0087A528 /* SCSpeciesImagesCollectionView.xib */; };
+		0DF4FF7122EAC79A0087A528 /* SCCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4FF7022EAC79A0087A528 /* SCCollectionViewFlowLayout.swift */; };
+		0DF4FF7422EAC7D60087A528 /* SCImageCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4FF7222EAC7D50087A528 /* SCImageCollectionViewCell.xib */; };
+		0DF4FF7522EAC7D60087A528 /* SCImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4FF7322EAC7D50087A528 /* SCImageCollectionViewCell.swift */; };
+		0DF4FF7722EACA110087A528 /* SCSpeciesAboutController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4FF7622EACA110087A528 /* SCSpeciesAboutController.storyboard */; };
+		0DF4FF7922EAD36C0087A528 /* UIScrollView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4FF7822EAD36C0087A528 /* UIScrollView+extension.swift */; };
 		D8D64EFEFDCBA15B69C52BF9 /* Pods_MyFishInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9D8A0DEA07D87441720EA2 /* Pods_MyFishInfo.framework */; };
 /* End PBXBuildFile section */
 
@@ -135,7 +150,7 @@
 		0DE09EBA22E97B440012F2E3 /* SCMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMoreViewController.swift; sourceTree = "<group>"; };
 		0DE09EBC22E97B440012F2E3 /* SCSearchViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSearchViewController.swift; sourceTree = "<group>"; };
 		0DE09EBE22E97B440012F2E3 /* SCNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNewsViewController.swift; sourceTree = "<group>"; };
-		0DE09EC022E97B440012F2E3 /* SCStockViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCStockViewController.swift; sourceTree = "<group>"; };
+		0DE09EC022E97B440012F2E3 /* SCSpeciesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSpeciesViewController.swift; sourceTree = "<group>"; };
 		0DE09EC222E97B440012F2E3 /* main.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = main.json; sourceTree = "<group>"; };
 		0DE09EC322E97B440012F2E3 /* SCNavigationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNavigationViewController.swift; sourceTree = "<group>"; };
 		0DE09EC422E97B440012F2E3 /* SCMainViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMainViewController.swift; sourceTree = "<group>"; };
@@ -144,6 +159,21 @@
 		0DE09EF522E9811D0012F2E3 /* SCNetworkManager+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SCNetworkManager+extension.swift"; sourceTree = "<group>"; };
 		0DE09EF822E983520012F2E3 /* SCSpeciesDataItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSpeciesDataItem.swift; sourceTree = "<group>"; };
 		0DE09EFA22E9925A0012F2E3 /* species.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = species.json; sourceTree = "<group>"; };
+		0DF4FF5722EA6FF50087A528 /* SCSpeciesDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSpeciesDisplayView.swift; sourceTree = "<group>"; };
+		0DF4FF5922EA70070087A528 /* SCSpeciesDisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCSpeciesDisplayView.xib; sourceTree = "<group>"; };
+		0DF4FF5B22EA7C060087A528 /* SCSpeciesViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSpeciesViewCell.swift; sourceTree = "<group>"; };
+		0DF4FF5D22EA7C160087A528 /* SCSpeciesViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCSpeciesViewCell.xib; sourceTree = "<group>"; };
+		0DF4FF5F22EA7FBE0087A528 /* SCSpeciesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSpeciesViewModel.swift; sourceTree = "<group>"; };
+		0DF4FF6222EAB6CC0087A528 /* SCSpeciesDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSpeciesDetailsController.swift; sourceTree = "<group>"; };
+		0DF4FF6422EAB6E40087A528 /* SCSpeciesDetailsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCSpeciesDetailsController.xib; sourceTree = "<group>"; };
+		0DF4FF6722EAC5660087A528 /* SCSpeciesAboutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSpeciesAboutController.swift; sourceTree = "<group>"; };
+		0DF4FF6B22EAC7090087A528 /* SCSpeciesImagesCollectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSpeciesImagesCollectionView.swift; sourceTree = "<group>"; };
+		0DF4FF6D22EAC71E0087A528 /* SCSpeciesImagesCollectionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCSpeciesImagesCollectionView.xib; sourceTree = "<group>"; };
+		0DF4FF7022EAC79A0087A528 /* SCCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		0DF4FF7222EAC7D50087A528 /* SCImageCollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCImageCollectionViewCell.xib; sourceTree = "<group>"; };
+		0DF4FF7322EAC7D50087A528 /* SCImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCImageCollectionViewCell.swift; sourceTree = "<group>"; };
+		0DF4FF7622EACA110087A528 /* SCSpeciesAboutController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCSpeciesAboutController.storyboard; sourceTree = "<group>"; };
+		0DF4FF7822EAD36C0087A528 /* UIScrollView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+extension.swift"; sourceTree = "<group>"; };
 		214001B0B5EAA33F80DB607F /* Pods-MyFishInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFishInfo.debug.xcconfig"; path = "Target Support Files/Pods-MyFishInfo/Pods-MyFishInfo.debug.xcconfig"; sourceTree = "<group>"; };
 		8F2A6CB8E6F802EA114336A5 /* Pods-MyFishInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFishInfo.release.xcconfig"; path = "Target Support Files/Pods-MyFishInfo/Pods-MyFishInfo.release.xcconfig"; sourceTree = "<group>"; };
 		DC9D8A0DEA07D87441720EA2 /* Pods_MyFishInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFishInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -318,6 +348,7 @@
 				0DE09EB422E97B440012F2E3 /* UIPageControl+extension.swift */,
 				0DE09EB522E97B440012F2E3 /* UIBarButtonItem+extension.swift */,
 				0DE09EB622E97B440012F2E3 /* UITableView+extension.swift */,
+				0DF4FF7822EAD36C0087A528 /* UIScrollView+extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -370,7 +401,9 @@
 		0DE09EBF22E97B440012F2E3 /* Species */ = {
 			isa = PBXGroup;
 			children = (
-				0DE09EC022E97B440012F2E3 /* SCStockViewController.swift */,
+				0DF4FF6122EAB69A0087A528 /* Details View */,
+				0DF4FF5622EA6F430087A528 /* Display View */,
+				0DE09EC022E97B440012F2E3 /* SCSpeciesViewController.swift */,
 			);
 			path = Species;
 			sourceTree = "<group>";
@@ -406,6 +439,7 @@
 			children = (
 				0DE09EFA22E9925A0012F2E3 /* species.json */,
 				0DE09EF322E980940012F2E3 /* SCSpeciesListViewModel.swift */,
+				0DF4FF5F22EA7FBE0087A528 /* SCSpeciesViewModel.swift */,
 			);
 			path = Species;
 			sourceTree = "<group>";
@@ -416,6 +450,49 @@
 				0DE09EF822E983520012F2E3 /* SCSpeciesDataItem.swift */,
 			);
 			path = Species;
+			sourceTree = "<group>";
+		};
+		0DF4FF5622EA6F430087A528 /* Display View */ = {
+			isa = PBXGroup;
+			children = (
+				0DF4FF5722EA6FF50087A528 /* SCSpeciesDisplayView.swift */,
+				0DF4FF5922EA70070087A528 /* SCSpeciesDisplayView.xib */,
+				0DF4FF5B22EA7C060087A528 /* SCSpeciesViewCell.swift */,
+				0DF4FF5D22EA7C160087A528 /* SCSpeciesViewCell.xib */,
+			);
+			path = "Display View";
+			sourceTree = "<group>";
+		};
+		0DF4FF6122EAB69A0087A528 /* Details View */ = {
+			isa = PBXGroup;
+			children = (
+				0DF4FF6622EAC54C0087A528 /* About */,
+				0DF4FF6222EAB6CC0087A528 /* SCSpeciesDetailsController.swift */,
+				0DF4FF6422EAB6E40087A528 /* SCSpeciesDetailsController.xib */,
+			);
+			path = "Details View";
+			sourceTree = "<group>";
+		};
+		0DF4FF6622EAC54C0087A528 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				0DF4FF6F22EAC78A0087A528 /* Collection View */,
+				0DF4FF6722EAC5660087A528 /* SCSpeciesAboutController.swift */,
+				0DF4FF7622EACA110087A528 /* SCSpeciesAboutController.storyboard */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		0DF4FF6F22EAC78A0087A528 /* Collection View */ = {
+			isa = PBXGroup;
+			children = (
+				0DF4FF6B22EAC7090087A528 /* SCSpeciesImagesCollectionView.swift */,
+				0DF4FF6D22EAC71E0087A528 /* SCSpeciesImagesCollectionView.xib */,
+				0DF4FF7022EAC79A0087A528 /* SCCollectionViewFlowLayout.swift */,
+				0DF4FF7322EAC7D50087A528 /* SCImageCollectionViewCell.swift */,
+				0DF4FF7222EAC7D50087A528 /* SCImageCollectionViewCell.xib */,
+			);
+			path = "Collection View";
 			sourceTree = "<group>";
 		};
 		808412D48C8712AB95E3907E /* Frameworks */ = {
@@ -544,7 +621,13 @@
 				0DE09EFB22E9925B0012F2E3 /* species.json in Resources */,
 				0DE09EED22E97B450012F2E3 /* main.json in Resources */,
 				0DE09E6222E97ACC0012F2E3 /* LaunchScreen.storyboard in Resources */,
+				0DF4FF6E22EAC71E0087A528 /* SCSpeciesImagesCollectionView.xib in Resources */,
+				0DF4FF5A22EA70070087A528 /* SCSpeciesDisplayView.xib in Resources */,
+				0DF4FF7722EACA110087A528 /* SCSpeciesAboutController.storyboard in Resources */,
+				0DF4FF6522EAB6E40087A528 /* SCSpeciesDetailsController.xib in Resources */,
+				0DF4FF7422EAC7D60087A528 /* SCImageCollectionViewCell.xib in Resources */,
 				0DE09E5F22E97ACC0012F2E3 /* Assets.xcassets in Resources */,
+				0DF4FF5E22EA7C160087A528 /* SCSpeciesViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -576,9 +659,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-MyFishInfo/Pods-MyFishInfo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/DLSlideView/DLSlideView.framework",
 				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
+				"${BUILT_PRODUCTS_DIR}/GSKStretchyHeaderView/GSKStretchyHeaderView.framework",
 				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
+				"${BUILT_PRODUCTS_DIR}/SCTableIndex/SCTableIndex.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
 			);
@@ -588,9 +675,13 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLSlideView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSKStretchyHeaderView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCTableIndex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKPhotoBrowser.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
 			);
@@ -630,8 +721,11 @@
 			files = (
 				0DE09EE722E97B450012F2E3 /* UIBarButtonItem+extension.swift in Sources */,
 				0DE09EDB22E97B450012F2E3 /* UILabel+extension.swift in Sources */,
+				0DF4FF5C22EA7C060087A528 /* SCSpeciesViewCell.swift in Sources */,
+				0DF4FF6C22EAC7090087A528 /* SCSpeciesImagesCollectionView.swift in Sources */,
 				0DE09EE022E97B450012F2E3 /* Double+extension.swift in Sources */,
 				0DE09EE222E97B450012F2E3 /* UIViewController+extension.swift in Sources */,
+				0DF4FF5822EA6FF50087A528 /* SCSpeciesDisplayView.swift in Sources */,
 				0DE09ECA22E97B450012F2E3 /* UIButton+SCAddition.m in Sources */,
 				0DE09EEF22E97B450012F2E3 /* SCMainViewController.swift in Sources */,
 				0DE09ECB22E97B450012F2E3 /* UINavigationController+WJObjcSugar.m in Sources */,
@@ -639,18 +733,21 @@
 				0DE09EDD22E97B450012F2E3 /* UIImage+extension.swift in Sources */,
 				0DE09EDE22E97B450012F2E3 /* UINavigationController+extension.swift in Sources */,
 				0DE09EE422E97B450012F2E3 /* UITableViewCell+extension.swift in Sources */,
+				0DF4FF7522EAC7D60087A528 /* SCImageCollectionViewCell.swift in Sources */,
 				0DE09EDC22E97B450012F2E3 /* UIView+extension.swift in Sources */,
 				0DE09ED222E97B450012F2E3 /* UILabel+SCAddition.m in Sources */,
 				0DE09EF122E97B450012F2E3 /* SCIndexesViewController.swift in Sources */,
 				0DE09EEE22E97B450012F2E3 /* SCNavigationViewController.swift in Sources */,
 				0DE09EC922E97B450012F2E3 /* InfoCommon.swift in Sources */,
 				0DE09ECD22E97B450012F2E3 /* UIColor+WJObjcSugar.m in Sources */,
+				0DF4FF6322EAB6CC0087A528 /* SCSpeciesDetailsController.swift in Sources */,
 				0DE09ED922E97B450012F2E3 /* UIWindow+extension.swift in Sources */,
 				0DE09EEB22E97B450012F2E3 /* SCNewsViewController.swift in Sources */,
 				0DE09EE322E97B450012F2E3 /* String+extension.swift in Sources */,
 				0DE09ED322E97B450012F2E3 /* UIColor+SCAddition.m in Sources */,
 				0DE09EE522E97B450012F2E3 /* WKWebView+extension.swift in Sources */,
 				0DE09E5822E97ACB0012F2E3 /* AppDelegate.swift in Sources */,
+				0DF4FF6822EAC5660087A528 /* SCSpeciesAboutController.swift in Sources */,
 				0DE09ED822E97B450012F2E3 /* UIFont+extension.swift in Sources */,
 				0DE09EF422E980940012F2E3 /* SCSpeciesListViewModel.swift in Sources */,
 				0DE09EEA22E97B450012F2E3 /* SCSearchViewController.swift in Sources */,
@@ -665,8 +762,11 @@
 				0DE09EE922E97B450012F2E3 /* SCMoreViewController.swift in Sources */,
 				0DE09EF622E9811D0012F2E3 /* SCNetworkManager+extension.swift in Sources */,
 				0DE09EDF22E97B450012F2E3 /* Bundle+extension.swift in Sources */,
-				0DE09EEC22E97B450012F2E3 /* SCStockViewController.swift in Sources */,
+				0DF4FF7122EAC79A0087A528 /* SCCollectionViewFlowLayout.swift in Sources */,
+				0DF4FF6022EA7FBE0087A528 /* SCSpeciesViewModel.swift in Sources */,
+				0DE09EEC22E97B450012F2E3 /* SCSpeciesViewController.swift in Sources */,
 				0DE09EE122E97B450012F2E3 /* UITabBarController+extension.swift in Sources */,
+				0DF4FF7922EAD36C0087A528 /* UIScrollView+extension.swift in Sources */,
 				0DE09EDA22E97B450012F2E3 /* Date+extension.swift in Sources */,
 				0DE09ED022E97B450012F2E3 /* UIScreen+UISCreen_extenshion.m in Sources */,
 				0DE09ED422E97B450012F2E3 /* SCNetworkManager.swift in Sources */,

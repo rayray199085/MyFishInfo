@@ -2,21 +2,29 @@ PODS:
   - Alamofire (4.8.2)
   - AlamofireNetworkActivityIndicator (2.4.0):
     - Alamofire (~> 4.8)
+  - DLSlideView (0.8.3)
   - FBRetainCycleDetector (0.1.4)
+  - GSKStretchyHeaderView (1.0.4)
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
   - pop (1.0.12)
+  - SCTableIndex (0.3.0)
   - SDWebImage (5.0.6):
     - SDWebImage/Core (= 5.0.6)
   - SDWebImage/Core (5.0.6)
+  - SKPhotoBrowser (6.1.0)
   - SVProgressHUD (2.2.5)
 
 DEPENDENCIES:
   - Alamofire
   - AlamofireNetworkActivityIndicator
+  - DLSlideView (from `https://github.com/agdsdl/DLSlideView.git`)
+  - GSKStretchyHeaderView
   - MLeaksFinder
   - pop
+  - SCTableIndex
   - SDWebImage
+  - SKPhotoBrowser
   - SVProgressHUD
 
 SPEC REPOS:
@@ -24,20 +32,36 @@ SPEC REPOS:
     - Alamofire
     - AlamofireNetworkActivityIndicator
     - FBRetainCycleDetector
+    - GSKStretchyHeaderView
     - MLeaksFinder
     - pop
+    - SCTableIndex
     - SDWebImage
+    - SKPhotoBrowser
     - SVProgressHUD
+
+EXTERNAL SOURCES:
+  DLSlideView:
+    :git: https://github.com/agdsdl/DLSlideView.git
+
+CHECKOUT OPTIONS:
+  DLSlideView:
+    :commit: fc5f4f0be8b3c8849506ecb0e5282f6784c5f26e
+    :git: https://github.com/agdsdl/DLSlideView.git
 
 SPEC CHECKSUMS:
   Alamofire: ae5c501addb7afdbb13687d7f2f722c78734c2d3
   AlamofireNetworkActivityIndicator: 9acc3de3ca6645bf0efed462396b0df13dd3e7b8
+  DLSlideView: b517599cf60b1de71cb1b1e0bb356a893669c005
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
+  GSKStretchyHeaderView: 9743704c12bdc9cf7c7947bad3af8bf24f7061e3
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  SCTableIndex: db2a0917f5df1d63dfa2b02bb232426da414a66d
   SDWebImage: 920f1a2ff1ca8296ad34f6e0510a1ef1d70ac965
+  SKPhotoBrowser: 343de95d89dc7913763c5dda243cc6e606e4a168
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: 1dda0f1a1faa077f3c6edef10de7ad83700f36de
+PODFILE CHECKSUM: cc85140c4d01c1bc8916ea73cdc0c4b0a1edf240
 
 COCOAPODS: 1.6.1

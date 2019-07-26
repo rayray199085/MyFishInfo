@@ -12,5 +12,8 @@ pod "AlamofireNetworkActivityIndicator"
 pod "pop"
 pod "SVProgressHUD"
 pod 'MLeaksFinder'
-
+pod "SCTableIndex"
+pod 'SKPhotoBrowser'
+pod "GSKStretchyHeaderView"
+pod 'DLSlideView', :git => 'https://github.com/agdsdl/DLSlideView.git'
 end

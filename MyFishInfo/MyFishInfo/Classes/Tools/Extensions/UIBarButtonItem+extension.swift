@@ -11,10 +11,10 @@ import UIKit
 extension UIBarButtonItem{
     /// init barButtonItem with font size and title
     convenience init(title: String, fontSize: CGFloat = 16, target: Any?, action: Selector, isBack :Bool = false){
-        let button = UIButton.textButton(withTitle: title, andWithFontSize: fontSize, andWithNormalColor: UIColor.darkGray, andWithHighlight: UIColor.orange)
+        let button = UIButton.textButton(withTitle: title, andWithFontSize: fontSize, andWithNormalColor: InfoCommon.tinColor, andWithHighlight: UIColor.darkGray)
         button.addTarget(target, action: action, for: .touchUpInside)
         if isBack{
-            button.imageButton(withNormalImageName: "navigationbar_back_withtext", andWithHighlightedImageName: "navigationbar_back_withtext_highlighted")
+            button.imageButton(withNormalImageName: "navigationbar_back_withtext_highlighted", andWithHighlightedImageName: "navigationbar_back_withtext")
         }
         self.init(customView: button)
     }
