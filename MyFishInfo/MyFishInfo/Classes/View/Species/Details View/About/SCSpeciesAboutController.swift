@@ -10,15 +10,30 @@ import UIKit
 
 class SCSpeciesAboutController: UITableViewController {
     @IBOutlet var basicInfoLabels: [UILabel]!
+    @IBOutlet var iconImageViews: [UIImageView]!
+    @IBOutlet var titleLabels: [UILabel]!
     
     
     @IBOutlet weak var basicInfoCell: UITableViewCell!
     private lazy var imageScrollView = SCSpeciesImagesCollectionView.scrollImageView()
     var viewModel: SCSpeciesViewModel?{
         didSet{
-            imageScrollView.imageUrlStrings = viewModel?.imageUrlStrings
+            if (viewModel?.imageUrlStrings?.count ?? 0) > 0{
+                imageScrollView.imageUrlStrings = viewModel?.imageUrlStrings
+            }else{
+                tableView.tableHeaderView = nil
+            }
+            
             for (index,str) in (viewModel?.basicInfoStrings ?? []).enumerated(){
                 basicInfoLabels[index].text = str
+            }
+            let dictArray = (viewModel?.isFarmed ?? false) ? viewModel?.farmSpecies : viewModel?.wildSpecies
+            for (index,dict) in (dictArray ?? []).enumerated(){
+                guard let imageName = dict["image"] else{
+                    continue
+                }
+                iconImageViews[index].image = UIImage(named: imageName)
+                titleLabels[index].text = dict["title"]
             }
             tableView.reloadData()
         }
@@ -27,6 +42,7 @@ class SCSpeciesAboutController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.tableHeaderView = imageScrollView
+        tableView.separatorStyle = .none
     }
     
     

@@ -14,6 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface NSString (SCNSStringExt)
 -(NSString *)encodeStringInBase64;
 -(NSString *)decodeStringInBase64;
+-(NSString *)removeMultiNewlines;
 
 -(CGRect)sizeOfTextWithMaxSize:(CGSize)size andWithFont:(UIFont *)font;
 +(CGRect)sizeWithText:(NSString *)text andWithMaxSize:(CGSize)size andWithFont:(UIFont *)font;

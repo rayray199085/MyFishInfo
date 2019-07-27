@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0D09BBF622EC15F800AC7F02 /* SCNutritionFactsItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D09BBF522EC15F800AC7F02 /* SCNutritionFactsItem.swift */; };
+		0D09BBF922EC17D500AC7F02 /* SCSpeciesHealthController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D09BBF822EC17D500AC7F02 /* SCSpeciesHealthController.swift */; };
+		0D09BBFB22EC182500AC7F02 /* SCSpeciesHealthController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D09BBFA22EC182500AC7F02 /* SCSpeciesHealthController.xib */; };
+		0D09BBFD22EC192900AC7F02 /* SCSpeciesHealthCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D09BBFC22EC192900AC7F02 /* SCSpeciesHealthCell.swift */; };
+		0D09BBFF22EC193700AC7F02 /* SCSpeciesHealthCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D09BBFE22EC193700AC7F02 /* SCSpeciesHealthCell.xib */; };
+		0D09BC0122EC1F2500AC7F02 /* SCSpeciesHealthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D09BC0022EC1F2500AC7F02 /* SCSpeciesHealthHeaderView.swift */; };
+		0D09BC0322EC1F9F00AC7F02 /* SCSpeciesHealthHeaderView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D09BC0222EC1F9F00AC7F02 /* SCSpeciesHealthHeaderView.xib */; };
+		0D09BC0622EC328700AC7F02 /* SCSpeciesScienceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D09BC0522EC328700AC7F02 /* SCSpeciesScienceController.swift */; };
+		0D09BC0822EC32B100AC7F02 /* SCSpeciesScienceController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D09BC0722EC32B100AC7F02 /* SCSpeciesScienceController.xib */; };
+		0D09BC0A22EC352500AC7F02 /* SCScienceItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D09BC0922EC352500AC7F02 /* SCScienceItem.swift */; };
+		0D09BC0C22EC374700AC7F02 /* SCSpeciesScienceCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D09BC0B22EC374700AC7F02 /* SCSpeciesScienceCell.swift */; };
+		0D09BC0E22EC375E00AC7F02 /* SCSpeciesScienceCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D09BC0D22EC375E00AC7F02 /* SCSpeciesScienceCell.xib */; };
 		0DE09E5822E97ACB0012F2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09E5722E97ACB0012F2E3 /* AppDelegate.swift */; };
 		0DE09E5F22E97ACC0012F2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DE09E5E22E97ACC0012F2E3 /* Assets.xcassets */; };
 		0DE09E6222E97ACC0012F2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE09E6022E97ACC0012F2E3 /* LaunchScreen.storyboard */; };
@@ -92,6 +104,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0D09BBF522EC15F800AC7F02 /* SCNutritionFactsItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCNutritionFactsItem.swift; sourceTree = "<group>"; };
+		0D09BBF822EC17D500AC7F02 /* SCSpeciesHealthController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSpeciesHealthController.swift; sourceTree = "<group>"; };
+		0D09BBFA22EC182500AC7F02 /* SCSpeciesHealthController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCSpeciesHealthController.xib; sourceTree = "<group>"; };
+		0D09BBFC22EC192900AC7F02 /* SCSpeciesHealthCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSpeciesHealthCell.swift; sourceTree = "<group>"; };
+		0D09BBFE22EC193700AC7F02 /* SCSpeciesHealthCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCSpeciesHealthCell.xib; sourceTree = "<group>"; };
+		0D09BC0022EC1F2500AC7F02 /* SCSpeciesHealthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSpeciesHealthHeaderView.swift; sourceTree = "<group>"; };
+		0D09BC0222EC1F9F00AC7F02 /* SCSpeciesHealthHeaderView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCSpeciesHealthHeaderView.xib; sourceTree = "<group>"; };
+		0D09BC0522EC328700AC7F02 /* SCSpeciesScienceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSpeciesScienceController.swift; sourceTree = "<group>"; };
+		0D09BC0722EC32B100AC7F02 /* SCSpeciesScienceController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCSpeciesScienceController.xib; sourceTree = "<group>"; };
+		0D09BC0922EC352500AC7F02 /* SCScienceItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCScienceItem.swift; sourceTree = "<group>"; };
+		0D09BC0B22EC374700AC7F02 /* SCSpeciesScienceCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCSpeciesScienceCell.swift; sourceTree = "<group>"; };
+		0D09BC0D22EC375E00AC7F02 /* SCSpeciesScienceCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCSpeciesScienceCell.xib; sourceTree = "<group>"; };
 		0DE09E5422E97ACB0012F2E3 /* MyFishInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFishInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE09E5722E97ACB0012F2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DE09E5E22E97ACC0012F2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -205,6 +229,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0D09BBF422EC15DA00AC7F02 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0D09BBF522EC15F800AC7F02 /* SCNutritionFactsItem.swift */,
+				0D09BC0922EC352500AC7F02 /* SCScienceItem.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0D09BBF722EC17B900AC7F02 /* Health */ = {
+			isa = PBXGroup;
+			children = (
+				0D09BBF822EC17D500AC7F02 /* SCSpeciesHealthController.swift */,
+				0D09BBFA22EC182500AC7F02 /* SCSpeciesHealthController.xib */,
+				0D09BBFC22EC192900AC7F02 /* SCSpeciesHealthCell.swift */,
+				0D09BBFE22EC193700AC7F02 /* SCSpeciesHealthCell.xib */,
+				0D09BC0022EC1F2500AC7F02 /* SCSpeciesHealthHeaderView.swift */,
+				0D09BC0222EC1F9F00AC7F02 /* SCSpeciesHealthHeaderView.xib */,
+			);
+			path = Health;
+			sourceTree = "<group>";
+		};
+		0D09BC0422EC326300AC7F02 /* Science */ = {
+			isa = PBXGroup;
+			children = (
+				0D09BC0522EC328700AC7F02 /* SCSpeciesScienceController.swift */,
+				0D09BC0722EC32B100AC7F02 /* SCSpeciesScienceController.xib */,
+				0D09BC0B22EC374700AC7F02 /* SCSpeciesScienceCell.swift */,
+				0D09BC0D22EC375E00AC7F02 /* SCSpeciesScienceCell.xib */,
+			);
+			path = Science;
+			sourceTree = "<group>";
+		};
 		0DE09E4B22E97ACB0012F2E3 = {
 			isa = PBXGroup;
 			children = (
@@ -437,6 +494,7 @@
 		0DE09EF222E9807D0012F2E3 /* Species */ = {
 			isa = PBXGroup;
 			children = (
+				0D09BBF422EC15DA00AC7F02 /* Model */,
 				0DE09EFA22E9925A0012F2E3 /* species.json */,
 				0DE09EF322E980940012F2E3 /* SCSpeciesListViewModel.swift */,
 				0DF4FF5F22EA7FBE0087A528 /* SCSpeciesViewModel.swift */,
@@ -466,6 +524,8 @@
 		0DF4FF6122EAB69A0087A528 /* Details View */ = {
 			isa = PBXGroup;
 			children = (
+				0D09BC0422EC326300AC7F02 /* Science */,
+				0D09BBF722EC17B900AC7F02 /* Health */,
 				0DF4FF6622EAC54C0087A528 /* About */,
 				0DF4FF6222EAB6CC0087A528 /* SCSpeciesDetailsController.swift */,
 				0DF4FF6422EAB6E40087A528 /* SCSpeciesDetailsController.xib */,
@@ -618,16 +678,21 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D09BBFF22EC193700AC7F02 /* SCSpeciesHealthCell.xib in Resources */,
 				0DE09EFB22E9925B0012F2E3 /* species.json in Resources */,
+				0D09BC0E22EC375E00AC7F02 /* SCSpeciesScienceCell.xib in Resources */,
 				0DE09EED22E97B450012F2E3 /* main.json in Resources */,
 				0DE09E6222E97ACC0012F2E3 /* LaunchScreen.storyboard in Resources */,
+				0D09BC0322EC1F9F00AC7F02 /* SCSpeciesHealthHeaderView.xib in Resources */,
 				0DF4FF6E22EAC71E0087A528 /* SCSpeciesImagesCollectionView.xib in Resources */,
+				0D09BBFB22EC182500AC7F02 /* SCSpeciesHealthController.xib in Resources */,
 				0DF4FF5A22EA70070087A528 /* SCSpeciesDisplayView.xib in Resources */,
 				0DF4FF7722EACA110087A528 /* SCSpeciesAboutController.storyboard in Resources */,
 				0DF4FF6522EAB6E40087A528 /* SCSpeciesDetailsController.xib in Resources */,
 				0DF4FF7422EAC7D60087A528 /* SCImageCollectionViewCell.xib in Resources */,
 				0DE09E5F22E97ACC0012F2E3 /* Assets.xcassets in Resources */,
 				0DF4FF5E22EA7C160087A528 /* SCSpeciesViewCell.xib in Resources */,
+				0D09BC0822EC32B100AC7F02 /* SCSpeciesScienceController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -662,6 +727,7 @@
 				"${BUILT_PRODUCTS_DIR}/DLSlideView/DLSlideView.framework",
 				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
 				"${BUILT_PRODUCTS_DIR}/GSKStretchyHeaderView/GSKStretchyHeaderView.framework",
+				"${BUILT_PRODUCTS_DIR}/HTMLString/HTMLString.framework",
 				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
 				"${BUILT_PRODUCTS_DIR}/SCTableIndex/SCTableIndex.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -678,6 +744,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLSlideView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSKStretchyHeaderView.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTMLString.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCTableIndex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -719,19 +786,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D09BBFD22EC192900AC7F02 /* SCSpeciesHealthCell.swift in Sources */,
 				0DE09EE722E97B450012F2E3 /* UIBarButtonItem+extension.swift in Sources */,
 				0DE09EDB22E97B450012F2E3 /* UILabel+extension.swift in Sources */,
 				0DF4FF5C22EA7C060087A528 /* SCSpeciesViewCell.swift in Sources */,
+				0D09BBF622EC15F800AC7F02 /* SCNutritionFactsItem.swift in Sources */,
 				0DF4FF6C22EAC7090087A528 /* SCSpeciesImagesCollectionView.swift in Sources */,
 				0DE09EE022E97B450012F2E3 /* Double+extension.swift in Sources */,
 				0DE09EE222E97B450012F2E3 /* UIViewController+extension.swift in Sources */,
 				0DF4FF5822EA6FF50087A528 /* SCSpeciesDisplayView.swift in Sources */,
 				0DE09ECA22E97B450012F2E3 /* UIButton+SCAddition.m in Sources */,
 				0DE09EEF22E97B450012F2E3 /* SCMainViewController.swift in Sources */,
+				0D09BC0A22EC352500AC7F02 /* SCScienceItem.swift in Sources */,
 				0DE09ECB22E97B450012F2E3 /* UINavigationController+WJObjcSugar.m in Sources */,
 				0DE09EE622E97B450012F2E3 /* UIPageControl+extension.swift in Sources */,
 				0DE09EDD22E97B450012F2E3 /* UIImage+extension.swift in Sources */,
 				0DE09EDE22E97B450012F2E3 /* UINavigationController+extension.swift in Sources */,
+				0D09BC0C22EC374700AC7F02 /* SCSpeciesScienceCell.swift in Sources */,
 				0DE09EE422E97B450012F2E3 /* UITableViewCell+extension.swift in Sources */,
 				0DF4FF7522EAC7D60087A528 /* SCImageCollectionViewCell.swift in Sources */,
 				0DE09EDC22E97B450012F2E3 /* UIView+extension.swift in Sources */,
@@ -747,11 +818,13 @@
 				0DE09ED322E97B450012F2E3 /* UIColor+SCAddition.m in Sources */,
 				0DE09EE522E97B450012F2E3 /* WKWebView+extension.swift in Sources */,
 				0DE09E5822E97ACB0012F2E3 /* AppDelegate.swift in Sources */,
+				0D09BC0122EC1F2500AC7F02 /* SCSpeciesHealthHeaderView.swift in Sources */,
 				0DF4FF6822EAC5660087A528 /* SCSpeciesAboutController.swift in Sources */,
 				0DE09ED822E97B450012F2E3 /* UIFont+extension.swift in Sources */,
 				0DE09EF422E980940012F2E3 /* SCSpeciesListViewModel.swift in Sources */,
 				0DE09EEA22E97B450012F2E3 /* SCSearchViewController.swift in Sources */,
 				0DE09ED122E97B450012F2E3 /* CABasicAnimation+SCAddition.m in Sources */,
+				0D09BC0622EC328700AC7F02 /* SCSpeciesScienceController.swift in Sources */,
 				0DE09ECF22E97B450012F2E3 /* NSString+SCAddition.m in Sources */,
 				0DE09ED722E97B450012F2E3 /* NSAttributedString+extension.swift in Sources */,
 				0DE09EF922E983520012F2E3 /* SCSpeciesDataItem.swift in Sources */,
@@ -766,6 +839,7 @@
 				0DF4FF6022EA7FBE0087A528 /* SCSpeciesViewModel.swift in Sources */,
 				0DE09EEC22E97B450012F2E3 /* SCSpeciesViewController.swift in Sources */,
 				0DE09EE122E97B450012F2E3 /* UITabBarController+extension.swift in Sources */,
+				0D09BBF922EC17D500AC7F02 /* SCSpeciesHealthController.swift in Sources */,
 				0DF4FF7922EAD36C0087A528 /* UIScrollView+extension.swift in Sources */,
 				0DE09EDA22E97B450012F2E3 /* Date+extension.swift in Sources */,
 				0DE09ED022E97B450012F2E3 /* UIScreen+UISCreen_extenshion.m in Sources */,

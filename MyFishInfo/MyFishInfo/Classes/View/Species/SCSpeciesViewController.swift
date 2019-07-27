@@ -37,6 +37,7 @@ extension SCSpeciesViewController: SCSpeciesDisplayViewDelegate{
     func didSelectedCell(view: SCSpeciesDisplayView, index: Int) {
         let vc = SCSpeciesDetailsController()
         vc.viewModel = listViewModel.viewModels?[index]
+        vc.title = listViewModel.viewModels?[index].speciesName
         navigationController?.pushViewController(vc, animated: true)
     }
     

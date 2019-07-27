@@ -13,6 +13,8 @@ class SCSpeciesDetailsController: UIViewController {
     var viewModel: SCSpeciesViewModel?
     @IBOutlet weak var tabedSlideView: DLTabedSlideView!
     private let aboutController =  UIStoryboard(name: "SCSpeciesAboutController", bundle: nil).instantiateViewController(withIdentifier: "species_about") as! SCSpeciesAboutController
+    private let healthController = SCSpeciesHealthController()
+    private let scienceController = SCSpeciesScienceController()
     
     private let tabInfoArray = [["image":"about", "title": "About"],
                                 ["image":"health", "title": "Health"],
@@ -64,6 +66,10 @@ extension SCSpeciesDetailsController: DLTabedSlideViewDelegate{
         switch index {
         case 0:
             return aboutController
+        case 1:
+            return healthController
+        case 2:
+            return scienceController
         default:
             break
         }
@@ -73,6 +79,10 @@ extension SCSpeciesDetailsController: DLTabedSlideViewDelegate{
         switch index {
         case 0:
             aboutController.viewModel = viewModel
+        case 1:
+            healthController.viewModel = viewModel
+        case 2:
+            scienceController.viewModel = viewModel
         default:
             break
         }

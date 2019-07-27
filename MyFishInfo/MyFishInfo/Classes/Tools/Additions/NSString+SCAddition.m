@@ -16,6 +16,10 @@
     NSData *data = [[NSData alloc]initWithBase64EncodedString:self options:0];
     return [[NSString alloc]initWithData:data encoding:NSUTF8StringEncoding];
 }
+-(NSString *)removeMultiNewlines{
+    NSRegularExpression *regex = [NSRegularExpression regularExpressionWithPattern:@"\n+" options:0 error:NULL];
+    return [regex stringByReplacingMatchesInString:self options:0 range:NSMakeRange(0, [self length]) withTemplate:@"\n"];
+}
 
 
 /**

@@ -5,6 +5,7 @@ PODS:
   - DLSlideView (0.8.3)
   - FBRetainCycleDetector (0.1.4)
   - GSKStretchyHeaderView (1.0.4)
+  - HTMLString (5.0.0)
   - MLeaksFinder (1.0.0):
     - FBRetainCycleDetector
   - pop (1.0.12)
@@ -20,6 +21,7 @@ DEPENDENCIES:
   - AlamofireNetworkActivityIndicator
   - DLSlideView (from `https://github.com/agdsdl/DLSlideView.git`)
   - GSKStretchyHeaderView
+  - HTMLString (~> 5.0)
   - MLeaksFinder
   - pop
   - SCTableIndex
@@ -33,6 +35,7 @@ SPEC REPOS:
     - AlamofireNetworkActivityIndicator
     - FBRetainCycleDetector
     - GSKStretchyHeaderView
+    - HTMLString
     - MLeaksFinder
     - pop
     - SCTableIndex
@@ -55,6 +58,7 @@ SPEC CHECKSUMS:
   DLSlideView: b517599cf60b1de71cb1b1e0bb356a893669c005
   FBRetainCycleDetector: 46f8179bbb1c587deee3ea838a1a3ee02acf5015
   GSKStretchyHeaderView: 9743704c12bdc9cf7c7947bad3af8bf24f7061e3
+  HTMLString: 20374dc0195423d02569e87561f01153fca0c364
   MLeaksFinder: 8c435bd2f6d070af18cff082b503b21adc130fc0
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   SCTableIndex: db2a0917f5df1d63dfa2b02bb232426da414a66d
@@ -62,6 +66,6 @@ SPEC CHECKSUMS:
   SKPhotoBrowser: 343de95d89dc7913763c5dda243cc6e606e4a168
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
 
-PODFILE CHECKSUM: cc85140c4d01c1bc8916ea73cdc0c4b0a1edf240
+PODFILE CHECKSUM: 281c26a5e6e4f22f7edc953ab043e3fb4aa3856c
 
 COCOAPODS: 1.6.1
