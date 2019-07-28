@@ -9,10 +9,26 @@
 import UIKit
 
 class SCImageCollectionViewCell: UICollectionViewCell {
-    var imageUrlString: String?{
+    var imageGalleryItem: SCSpeciesDataItemImageGallery?{
         didSet{
-            speciesImageView.setImage(urlString: imageUrlString, placeholderImage: UIImage(named: "empty_picture"))
+            descriptionLabel.alpha = 0.0
+            speciesImageView.setImage(urlString: imageGalleryItem?.src, placeholderImage: UIImage(named: "empty_picture"))
+            descriptionLabel.text = imageGalleryItem?.alt
         }
     }
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        speciesImageView.isUserInteractionEnabled = true
+        speciesImageView.addGestureRecognizer(UITapGestureRecognizer(target: self, action: #selector(tapImageView)))
+    }
+    @objc private func tapImageView(recognizer: UITapGestureRecognizer){
+        speciesImageView.isUserInteractionEnabled = false
+        let fromValue = descriptionLabel.alpha
+        let toValue = fromValue == 0 ? 1 : 0
+        descriptionLabel.addPopAlphaAnimation(fromValue: Double(fromValue), toValue: Double(toValue), duration: 0.25) { [weak self](_, _) in
+            self?.speciesImageView.isUserInteractionEnabled = true
+        }
+    }
+    @IBOutlet weak var descriptionLabel: UILabel!
     @IBOutlet weak var speciesImageView: UIImageView!
 }

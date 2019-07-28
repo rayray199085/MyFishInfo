@@ -22,17 +22,28 @@
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nIU-Jn-1Ig">
                         <rect key="frame" x="0.0" y="0.0" width="297" height="165"/>
                     </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hg0-qE-7j4">
+                        <rect key="frame" x="0.0" y="0.0" width="297" height="18"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
             </view>
             <constraints>
                 <constraint firstItem="nIU-Jn-1Ig" firstAttribute="top" secondItem="3sZ-LN-4bt" secondAttribute="top" id="SB8-I4-mPK"/>
                 <constraint firstAttribute="bottom" secondItem="nIU-Jn-1Ig" secondAttribute="bottom" id="SSh-is-33a"/>
+                <constraint firstItem="hg0-qE-7j4" firstAttribute="top" secondItem="3sZ-LN-4bt" secondAttribute="top" id="ZWg-yU-QEA"/>
                 <constraint firstAttribute="trailing" secondItem="nIU-Jn-1Ig" secondAttribute="trailing" id="Zpu-Gh-Sr8"/>
+                <constraint firstAttribute="trailing" secondItem="hg0-qE-7j4" secondAttribute="trailing" id="bPS-3C-ZkL"/>
                 <constraint firstItem="nIU-Jn-1Ig" firstAttribute="leading" secondItem="3sZ-LN-4bt" secondAttribute="leading" id="siC-A5-FJy"/>
+                <constraint firstItem="hg0-qE-7j4" firstAttribute="leading" secondItem="3sZ-LN-4bt" secondAttribute="leading" id="tSd-cM-37L"/>
             </constraints>
             <viewLayoutGuide key="safeArea" id="7jp-UZ-wSK"/>
             <size key="customSize" width="297" height="165"/>
             <connections>
+                <outlet property="descriptionLabel" destination="hg0-qE-7j4" id="kvr-AX-eL5"/>
                 <outlet property="speciesImageView" destination="nIU-Jn-1Ig" id="RwN-AE-yU7"/>
             </connections>
             <point key="canvasLocation" x="209.42028985507247" y="142.96875"/>

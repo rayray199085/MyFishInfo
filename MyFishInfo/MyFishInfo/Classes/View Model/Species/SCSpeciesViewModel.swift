@@ -10,12 +10,13 @@ import Foundation
 import HTMLString
 
 struct SCSpeciesViewModel {
+    var item: SCSpeciesDataItem?
     var speciesAliases: String?
     var speciesName: String?
     var illustrationUrlString: String?
     var displayCellRowHeight: CGFloat?
     var isFarmed: Bool = false
-    var imageUrlStrings: [String]?
+    var imageGalleryItems: [SCSpeciesDataItemImageGallery]?
     var basicInfoStrings: [String]?
     var aboutCellHeight: CGFloat?
     let wildSpecies = [["image":"population", "title":"POPULATION"],
@@ -33,8 +34,10 @@ struct SCSpeciesViewModel {
     var showHealthHeaderView: Bool = false
     
     var scienceItems: [SCScienceItem]?
+    var fisheryItems: [SCScienceItem]?
     
     init(item: SCSpeciesDataItem) {
+        self.item = item
         speciesAliases = removeHtmlTags(htmlString: item.speciesAliases).replacingOccurrences(of: ", ", with: " • ", options: .regularExpression, range: nil)
         speciesName = item.speciesName
         illustrationUrlString = item.speciesIllustrationPhoto?.src
@@ -42,14 +45,20 @@ struct SCSpeciesViewModel {
         if item.farmingMethods != nil && (item.farmingMethods?.count ?? 0) > 0{
             isFarmed = true
         }
-        var urlStrings = [String]()
-        for img in item.imageGallery ?? []{
-            guard let urlString = img.src else{
-                continue
-            }
-            urlStrings.append(urlString)
-        }
-        imageUrlStrings = urlStrings
+        imageGalleryItems = item.imageGallery
+        basicInfoStrings = prepareBasicInfo(item: item)
+        aboutCellHeight = calculateAboutCellHeight()
+        nutritionFactsItems = prepareNutritionFactsItem(item: item)
+        tasteStrings = prepareTasteStrings(item: item)
+        healthHeaderViewHeight = calculateHealthHeaderViewHeight()
+        scienceItems = prepareScienceItems(item: item)
+        fisheryItems = prepareFisheryItems(item: item)
+    }
+}
+extension SCSpeciesViewModel{
+ 
+    // basic information
+    func prepareBasicInfo(item: SCSpeciesDataItem)->[String]{
         var basicInfoStrings = [String]()
         if isFarmed{
             basicInfoStrings.append(item.environmentalEffects ?? "")
@@ -65,9 +74,10 @@ struct SCSpeciesViewModel {
         basicInfoStrings.append(getHtmlTagsWithoutMultiNewlines(htmlString: item.availability))
         basicInfoStrings.append(getHtmlTagsWithoutMultiNewlines(htmlString: item.source))
         basicInfoStrings.append(getHtmlTagsWithoutMultiNewlines(htmlString: item.color))
-        self.basicInfoStrings = basicInfoStrings
-        aboutCellHeight = calculateAboutCellHeight()
-        
+        return basicInfoStrings
+    }
+    // nutrition facts item
+    func prepareNutritionFactsItem(item: SCSpeciesDataItem)->[SCNutritionFactsItem]{
         var nutritionFactsItems = [SCNutritionFactsItem]()
         nutritionFactsItems.append(SCNutritionFactsItem(keyName: "SERVINGS", description: item.servings))
         nutritionFactsItems.append(SCNutritionFactsItem(keyName: "SERVING WEIGHT", description: item.servingWeight))
@@ -81,8 +91,10 @@ struct SCSpeciesViewModel {
         nutritionFactsItems.append(SCNutritionFactsItem(keyName: "CHOLESTEROL", description: item.cholesterol))
         nutritionFactsItems.append(SCNutritionFactsItem(keyName: "SELENIUM", description: item.selenium))
         nutritionFactsItems.append(SCNutritionFactsItem(keyName: "SODIUM", description: item.sodium))
-        self.nutritionFactsItems = nutritionFactsItems
-        
+        return nutritionFactsItems
+    }
+    // health header view
+    mutating func prepareTasteStrings(item: SCSpeciesDataItem)->[String]{
         var tasteStrings = [String]()
         tasteStrings.append(getHtmlTagsWithoutMultiNewlines(htmlString: item.taste))
         tasteStrings.append(getHtmlTagsWithoutMultiNewlines(htmlString: item.texture))
@@ -92,9 +104,10 @@ struct SCSpeciesViewModel {
                 showHealthHeaderView = true
             }
         }
-        self.tasteStrings = tasteStrings
-        healthHeaderViewHeight = calculateHealthHeaderViewHeight()
-        
+        return tasteStrings
+    }
+     // science items
+    func prepareScienceItems(item: SCSpeciesDataItem)->[SCScienceItem]{
         var scienceItems = [SCScienceItem]()
         if isFarmed{
             scienceItems.append(SCScienceItem(keyName: "ENVIRONMENTAL CONSIDERATIONS", description: getHtmlTagsWithoutMultiNewlines(htmlString: item.environmentalConsiderations)))
@@ -115,8 +128,22 @@ struct SCSpeciesViewModel {
         scienceItems.append(SCScienceItem(keyName: "BIOLOGY", description: getHtmlTagsWithoutMultiNewlines(htmlString: item.biology)))
         
         scienceItems.append(SCScienceItem(keyName: "RESEARCH", description: getHtmlTagsWithoutMultiNewlines(htmlString: item.research)))
-        
-        self.scienceItems = scienceItems
+        return scienceItems
+    }
+    func prepareFisheryItems(item: SCSpeciesDataItem)->[SCScienceItem]{
+        var fisheryItems = [SCScienceItem]()
+        if isFarmed{
+            fisheryItems.append(SCScienceItem(keyName: "MANAGEMENT", description: getHtmlTagsWithoutMultiNewlines(htmlString: item.management)))
+            
+            fisheryItems.append(SCScienceItem(keyName: "FARMING METHODS", description: getHtmlTagsWithoutMultiNewlines(htmlString: item.farmingMethods)))
+            
+            fisheryItems.append(SCScienceItem(keyName: "PRODUCTION", description: getHtmlTagsWithoutMultiNewlines(htmlString: item.production)))
+        }else{
+            fisheryItems.append(SCScienceItem(keyName: "FISHERY MANAGEMENT", description: getHtmlTagsWithoutMultiNewlines(htmlString: item.fisheryManagement)))
+            
+            fisheryItems.append(SCScienceItem(keyName: "HARVEST", description: getHtmlTagsWithoutMultiNewlines(htmlString: item.harvest)))
+        }
+        return fisheryItems
     }
 }
 extension SCSpeciesViewModel{
@@ -169,7 +196,8 @@ extension SCSpeciesViewModel{
         height += 3 * margin
         return height > 85 ? height : 85
     }
-    
+}
+extension SCSpeciesViewModel{
     func removeHtmlTags(htmlString: String?)->String{
         guard let str = htmlString else{
             return ""

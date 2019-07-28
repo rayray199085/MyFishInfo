@@ -11,9 +11,9 @@ private let reuseIdentifier = "collection_cell_id"
 class SCSpeciesImagesCollectionView: UIView {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
-    var imageUrlStrings: [String]?{
+    var imageGalleryItems: [SCSpeciesDataItemImageGallery]?{
         didSet{
-            pageControl.numberOfPages = imageUrlStrings?.count ?? 0
+            pageControl.numberOfPages = imageGalleryItems?.count ?? 0
         }
     }
     
@@ -36,12 +36,12 @@ extension SCSpeciesImagesCollectionView: UICollectionViewDelegate, UICollectionV
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
-        return imageUrlStrings?.count ?? 0
+        return imageGalleryItems?.count ?? 0
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath) as! SCImageCollectionViewCell
-        cell.imageUrlString = imageUrlStrings?[indexPath.item]
+        cell.imageGalleryItem = imageGalleryItems?[indexPath.item]
         return cell
     }
     func scrollViewDidScroll(_ scrollView: UIScrollView) {

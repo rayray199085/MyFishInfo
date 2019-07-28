@@ -18,8 +18,8 @@ class SCSpeciesAboutController: UITableViewController {
     private lazy var imageScrollView = SCSpeciesImagesCollectionView.scrollImageView()
     var viewModel: SCSpeciesViewModel?{
         didSet{
-            if (viewModel?.imageUrlStrings?.count ?? 0) > 0{
-                imageScrollView.imageUrlStrings = viewModel?.imageUrlStrings
+            if (viewModel?.imageGalleryItems?.count ?? 0) > 0{
+                imageScrollView.imageGalleryItems = viewModel?.imageGalleryItems
             }else{
                 tableView.tableHeaderView = nil
             }

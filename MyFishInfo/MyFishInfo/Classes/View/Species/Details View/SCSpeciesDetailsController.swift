@@ -15,6 +15,13 @@ class SCSpeciesDetailsController: UIViewController {
     private let aboutController =  UIStoryboard(name: "SCSpeciesAboutController", bundle: nil).instantiateViewController(withIdentifier: "species_about") as! SCSpeciesAboutController
     private let healthController = SCSpeciesHealthController()
     private let scienceController = SCSpeciesScienceController()
+    private let fisheryController = SCSpeciesFisheryController()
+    private lazy var favouriteButton:UIButton = {
+        let btn = UIButton()
+        btn.setImage(UIImage(named:"favourite_normal"), for: [])
+        btn.setImage(UIImage(named: "favourite_selected"), for: .selected)
+        return btn
+    }()
     
     private let tabInfoArray = [["image":"about", "title": "About"],
                                 ["image":"health", "title": "Health"],
@@ -24,6 +31,11 @@ class SCSpeciesDetailsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
+        guard let speciesName = title else{
+            return
+        }
+        let res = CoreDataManager.shared.getSpeciesItemWith(name: speciesName)
+        favouriteButton.isSelected = res.count > 0
     }
     private func getTabs()->[DLTabedbarItem]{
         var tabs = [DLTabedbarItem]()
@@ -39,10 +51,39 @@ class SCSpeciesDetailsController: UIViewController {
         }
         return tabs
     }
+    @objc private func clickFavouriteButton(){
+        favouriteButton.isSelected = !favouriteButton.isSelected
+    }
+    @objc private func clickBackButton(){
+        guard let speciesName = title else{
+            return
+        }
+        let res = CoreDataManager.shared.getSpeciesItemWith(name: speciesName)
+        if favouriteButton.isSelected{
+            if res.count == 0{
+                guard let item = viewModel?.item,
+                      let data = try? JSONEncoder().encode(item) else{
+                    return
+                }
+                CoreDataManager.shared.addSpeciesItemWith(name: speciesName, item: data)
+            }
+        }else{
+            if res.count > 0{
+                CoreDataManager.shared.deleteWith(name: speciesName)
+            }
+        }
+        navigationController?.popViewController(animated: true)
+    }
 }
 private extension SCSpeciesDetailsController{
     func setupUI(){
         setupTabedSlideView()
+        setupNavigationItem()
+    }
+    func setupNavigationItem(){
+        navigationItem.leftBarButtonItem = UIBarButtonItem(title: "Species", fontSize: 16, target: self, action: #selector(clickBackButton), isBack: true)
+        navigationItem.rightBarButtonItem = UIBarButtonItem(customView: favouriteButton)
+        favouriteButton.addTarget(self, action: #selector(clickFavouriteButton), for: .touchUpInside)
     }
     func setupTabedSlideView(){
         tabedSlideView.baseViewController = self
@@ -70,6 +111,8 @@ extension SCSpeciesDetailsController: DLTabedSlideViewDelegate{
             return healthController
         case 2:
             return scienceController
+        case 3:
+            return fisheryController
         default:
             break
         }
@@ -83,6 +126,8 @@ extension SCSpeciesDetailsController: DLTabedSlideViewDelegate{
             healthController.viewModel = viewModel
         case 2:
             scienceController.viewModel = viewModel
+        case 3:
+            fisheryController.viewModel = viewModel
         default:
             break
         }
