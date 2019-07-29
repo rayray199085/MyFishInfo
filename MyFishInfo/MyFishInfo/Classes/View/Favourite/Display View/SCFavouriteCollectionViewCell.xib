@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="hqh-r8-TpA" customClass="SCFavouriteCollectionViewCell" customModule="MyFishInfo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="233" height="249"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                <rect key="frame" x="0.0" y="0.0" width="233" height="249"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="vci-CM-JS8">
+                        <rect key="frame" x="3" y="3" width="227" height="170.5"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.93725490196078431" blue="0.93725490196078431" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="vci-CM-JS8" secondAttribute="height" multiplier="4:3" id="K5g-s9-PmH"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="625-X9-dw6">
+                        <rect key="frame" x="3" y="176.5" width="227" height="20.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" FARMED " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wmm-bY-24V">
+                        <rect key="frame" x="181" y="3" width="49" height="12"/>
+                        <color key="backgroundColor" red="0.70588916540145874" green="0.70587366819381714" blue="0.70588235294117641" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="10"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="625-X9-dw6" firstAttribute="centerX" secondItem="hqh-r8-TpA" secondAttribute="centerX" id="8Na-Hg-R4f"/>
+                <constraint firstItem="wmm-bY-24V" firstAttribute="trailing" secondItem="vci-CM-JS8" secondAttribute="trailing" id="AYA-oy-9kn"/>
+                <constraint firstItem="vci-CM-JS8" firstAttribute="leading" secondItem="hqh-r8-TpA" secondAttribute="leading" constant="3" id="DGs-lx-VZQ"/>
+                <constraint firstItem="625-X9-dw6" firstAttribute="top" secondItem="vci-CM-JS8" secondAttribute="bottom" constant="3" id="ING-dU-Ekz"/>
+                <constraint firstItem="625-X9-dw6" firstAttribute="leading" secondItem="hqh-r8-TpA" secondAttribute="leading" constant="3" id="gMd-Mx-nUy"/>
+                <constraint firstAttribute="trailing" secondItem="vci-CM-JS8" secondAttribute="trailing" constant="3" id="imP-wd-8ws"/>
+                <constraint firstItem="vci-CM-JS8" firstAttribute="top" secondItem="hqh-r8-TpA" secondAttribute="top" constant="3" id="lxE-5i-Z4J"/>
+                <constraint firstAttribute="trailing" secondItem="625-X9-dw6" secondAttribute="trailing" constant="3" id="rjm-sT-QKg"/>
+                <constraint firstItem="wmm-bY-24V" firstAttribute="top" secondItem="vci-CM-JS8" secondAttribute="top" id="yHJ-sm-lxc"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="Vx3-RS-FNc"/>
+            <size key="customSize" width="233" height="249"/>
+            <connections>
+                <outlet property="farmedLabel" destination="wmm-bY-24V" id="e38-Ez-2Nc"/>
+                <outlet property="speciesImageView" destination="vci-CM-JS8" id="jGx-q6-Jno"/>
+                <outlet property="speciesNameLabel" destination="625-X9-dw6" id="o6C-C1-CeQ"/>
+            </connections>
+            <point key="canvasLocation" x="113.768115942029" y="131.58482142857142"/>
+        </collectionViewCell>
+    </objects>
+</document>

@@ -16,7 +16,7 @@ struct SCSpeciesViewModel {
     var illustrationUrlString: String?
     var displayCellRowHeight: CGFloat?
     var isFarmed: Bool = false
-    var imageGalleryItems: [SCSpeciesDataItemImageGallery]?
+    var imageGalleryItems: [SCSpeciesImageGalleryItem]?
     var basicInfoStrings: [String]?
     var aboutCellHeight: CGFloat?
     let wildSpecies = [["image":"population", "title":"POPULATION"],
@@ -45,7 +45,7 @@ struct SCSpeciesViewModel {
         if item.farmingMethods != nil && (item.farmingMethods?.count ?? 0) > 0{
             isFarmed = true
         }
-        imageGalleryItems = item.imageGallery
+        imageGalleryItems = prepareImageGalleryItems(item: item)
         basicInfoStrings = prepareBasicInfo(item: item)
         aboutCellHeight = calculateAboutCellHeight()
         nutritionFactsItems = prepareNutritionFactsItem(item: item)
@@ -56,6 +56,17 @@ struct SCSpeciesViewModel {
     }
 }
 extension SCSpeciesViewModel{
+    // image gallery
+    func prepareImageGalleryItems(item: SCSpeciesDataItem)->[SCSpeciesImageGalleryItem]{
+        var imageGalleryItems = [SCSpeciesImageGalleryItem]()
+        for imageGallery in item.imageGallery ?? []{
+            imageGalleryItems.append(SCSpeciesImageGalleryItem(
+                src: imageGallery.src,
+                alt: getHtmlTagsWithoutMultiNewlines(htmlString: imageGallery.alt),
+                title: getHtmlTagsWithoutMultiNewlines(htmlString: imageGallery.title)))
+        }
+        return imageGalleryItems
+    }
  
     // basic information
     func prepareBasicInfo(item: SCSpeciesDataItem)->[String]{

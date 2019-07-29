@@ -11,7 +11,7 @@ private let reuseIdentifier = "collection_cell_id"
 class SCSpeciesImagesCollectionView: UIView {
     @IBOutlet weak var pageControl: UIPageControl!
     @IBOutlet weak var collectionView: UICollectionView!
-    var imageGalleryItems: [SCSpeciesDataItemImageGallery]?{
+    var imageGalleryItems: [SCSpeciesImageGalleryItem]?{
         didSet{
             pageControl.numberOfPages = imageGalleryItems?.count ?? 0
         }

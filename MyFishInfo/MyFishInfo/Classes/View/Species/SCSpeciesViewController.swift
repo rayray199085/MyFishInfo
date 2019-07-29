@@ -18,14 +18,12 @@ class SCSpeciesViewController: UIViewController {
         setupUI()
         loadData()
     }
-    
 }
 private extension SCSpeciesViewController{
     func setupUI(){
         view.addSubview(displayView)
         displayView.delegate = self
     }
-    
     func loadData(){
         listViewModel.loadSpeciesData { [weak self](isSuccess) in
             self?.displayView.viewModels = self?.listViewModel.viewModels
@@ -60,3 +58,4 @@ extension SCSpeciesViewController: SCSpeciesDisplayViewDelegate{
         }
     }
 }
+

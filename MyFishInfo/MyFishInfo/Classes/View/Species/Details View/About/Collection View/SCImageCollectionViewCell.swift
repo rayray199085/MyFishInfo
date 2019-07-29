@@ -9,7 +9,7 @@
 import UIKit
 
 class SCImageCollectionViewCell: UICollectionViewCell {
-    var imageGalleryItem: SCSpeciesDataItemImageGallery?{
+    var imageGalleryItem: SCSpeciesImageGalleryItem?{
         didSet{
             descriptionLabel.alpha = 0.0
             speciesImageView.setImage(urlString: imageGalleryItem?.src, placeholderImage: UIImage(named: "empty_picture"))

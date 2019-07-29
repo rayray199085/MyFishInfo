@@ -31,12 +31,15 @@ class CoreDataManager: NSObject {
         speciesItem.speciesName = name
         speciesItem.item = item
         saveContext()
+        
+        NotificationCenter.default.post(name: NSNotification.Name(InfoCommon.SCUpdateFavouriteSpecies), object: nil)
     }
     
     func getAllSpeciesItems() -> [SpeciesItem] {
         let fetchRequest: NSFetchRequest = SpeciesItem.fetchRequest()
         // for sort 
-        //fetchRequest.sortDescriptors = [sortDescriptor]
+        let sort = NSSortDescriptor(key: #keyPath(SpeciesItem.speciesName), ascending: true)
+        fetchRequest.sortDescriptors = [sort]
         do {
             let result = try context.fetch(fetchRequest)
             return result
@@ -69,6 +72,8 @@ class CoreDataManager: NSObject {
             fatalError();
         }
         saveContext()
+        
+        NotificationCenter.default.post(name: NSNotification.Name(InfoCommon.SCUpdateFavouriteSpecies), object: nil)
     }
     
     func deleteAllPerson() {

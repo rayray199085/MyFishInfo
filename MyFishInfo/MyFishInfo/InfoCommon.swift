@@ -26,7 +26,7 @@ struct InfoCommon{
     static let decreasingPriceColor = UIColor(displayP3Red: 189.0 / 250, green: 63.0 / 250, blue: 68.0 / 250, alpha: 1.0)
     
     static let baseUrl = "https://www.fishwatch.gov/api/species"
-    static let newsUrl = "https://newsapi.org/v2/top-headlines?apiKey=c53eb778bee44e6f9e2b0349d1bf9e24"
-    
-    static let SCNewsCountryCodeHasChanged = "SCNewsCountryCodeHasChanged"
+    static let recipesUrl = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"
+    static let mealUrl = "https://www.themealdb.com/api/json/v1/1/lookup.php"
+    static let SCUpdateFavouriteSpecies = "SCUpdateFavouriteSpecies"
 }
