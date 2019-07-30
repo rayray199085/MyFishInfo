@@ -17,5 +17,7 @@ pod 'SKPhotoBrowser'
 pod "GSKStretchyHeaderView"
 pod 'DLSlideView', :git => 'https://github.com/agdsdl/DLSlideView.git'
 pod 'HTMLString', '~> 5.0'
+pod "MobilePlayer"
+pod 'AnimatedCollectionViewLayout'
 
 end

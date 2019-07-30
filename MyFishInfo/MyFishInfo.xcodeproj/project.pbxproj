@@ -24,6 +24,17 @@
 		0D2EC93722ED719100897104 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EC93322ED719100897104 /* Model.xcdatamodeld */; };
 		0D2EC93822ED719100897104 /* AppDelegate+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EC93522ED719100897104 /* AppDelegate+extension.swift */; };
 		0D2EC93922ED719100897104 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D2EC93622ED719100897104 /* CoreDataManager.swift */; };
+		0D49A42F22EFD71E004F5E3B /* SCRecipesDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49A42E22EFD71E004F5E3B /* SCRecipesDisplayView.swift */; };
+		0D49A43122EFD779004F5E3B /* SCRecipesDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D49A43022EFD779004F5E3B /* SCRecipesDisplayView.xib */; };
+		0D49A43322EFD967004F5E3B /* SCRecipesCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49A43222EFD967004F5E3B /* SCRecipesCollectionViewCell.swift */; };
+		0D49A43522EFD974004F5E3B /* SCRecipesCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D49A43422EFD974004F5E3B /* SCRecipesCollectionViewCell.xib */; };
+		0D49A43822EFFB46004F5E3B /* SCRecipesDetailsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49A43722EFFB46004F5E3B /* SCRecipesDetailsController.swift */; };
+		0D49A43A22EFFD8C004F5E3B /* SCRecipesDetailsController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D49A43922EFFD8C004F5E3B /* SCRecipesDetailsController.xib */; };
+		0D49A43C22F007A9004F5E3B /* SCRecipesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49A43B22F007A9004F5E3B /* SCRecipesViewModel.swift */; };
+		0D49A44022F029D9004F5E3B /* SCRecipesMealCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49A43F22F029D9004F5E3B /* SCRecipesMealCell.swift */; };
+		0D49A44222F029E5004F5E3B /* SCRecipesMealCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D49A44122F029E5004F5E3B /* SCRecipesMealCell.xib */; };
+		0D49A44422F0311A004F5E3B /* SCRecipesMealFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D49A44322F0311A004F5E3B /* SCRecipesMealFooterView.swift */; };
+		0D49A44622F0319E004F5E3B /* SCRecipesMealFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D49A44522F0319E004F5E3B /* SCRecipesMealFooterView.xib */; };
 		0D8BF71722EE76F800057B44 /* SCFavouriteDisplayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8BF71622EE76F800057B44 /* SCFavouriteDisplayView.swift */; };
 		0D8BF71922EE776900057B44 /* SCFavouriteDisplayView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0D8BF71822EE776900057B44 /* SCFavouriteDisplayView.xib */; };
 		0D8BF71B22EE782600057B44 /* SCFavouriteViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D8BF71A22EE782600057B44 /* SCFavouriteViewFlowLayout.swift */; };
@@ -157,6 +168,17 @@
 		0D2EC93422ED719100897104 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
 		0D2EC93522ED719100897104 /* AppDelegate+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AppDelegate+extension.swift"; sourceTree = "<group>"; };
 		0D2EC93622ED719100897104 /* CoreDataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		0D49A42E22EFD71E004F5E3B /* SCRecipesDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecipesDisplayView.swift; sourceTree = "<group>"; };
+		0D49A43022EFD779004F5E3B /* SCRecipesDisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCRecipesDisplayView.xib; sourceTree = "<group>"; };
+		0D49A43222EFD967004F5E3B /* SCRecipesCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecipesCollectionViewCell.swift; sourceTree = "<group>"; };
+		0D49A43422EFD974004F5E3B /* SCRecipesCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCRecipesCollectionViewCell.xib; sourceTree = "<group>"; };
+		0D49A43722EFFB46004F5E3B /* SCRecipesDetailsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecipesDetailsController.swift; sourceTree = "<group>"; };
+		0D49A43922EFFD8C004F5E3B /* SCRecipesDetailsController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCRecipesDetailsController.xib; sourceTree = "<group>"; };
+		0D49A43B22F007A9004F5E3B /* SCRecipesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecipesViewModel.swift; sourceTree = "<group>"; };
+		0D49A43F22F029D9004F5E3B /* SCRecipesMealCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecipesMealCell.swift; sourceTree = "<group>"; };
+		0D49A44122F029E5004F5E3B /* SCRecipesMealCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCRecipesMealCell.xib; sourceTree = "<group>"; };
+		0D49A44322F0311A004F5E3B /* SCRecipesMealFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCRecipesMealFooterView.swift; sourceTree = "<group>"; };
+		0D49A44522F0319E004F5E3B /* SCRecipesMealFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCRecipesMealFooterView.xib; sourceTree = "<group>"; };
 		0D8BF71622EE76F800057B44 /* SCFavouriteDisplayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCFavouriteDisplayView.swift; sourceTree = "<group>"; };
 		0D8BF71822EE776900057B44 /* SCFavouriteDisplayView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SCFavouriteDisplayView.xib; sourceTree = "<group>"; };
 		0D8BF71A22EE782600057B44 /* SCFavouriteViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SCFavouriteViewFlowLayout.swift; sourceTree = "<group>"; };
@@ -354,6 +376,30 @@
 			path = "Core Data ";
 			sourceTree = "<group>";
 		};
+		0D49A42722EFBD55004F5E3B /* Display View */ = {
+			isa = PBXGroup;
+			children = (
+				0D49A42E22EFD71E004F5E3B /* SCRecipesDisplayView.swift */,
+				0D49A43022EFD779004F5E3B /* SCRecipesDisplayView.xib */,
+				0D49A43222EFD967004F5E3B /* SCRecipesCollectionViewCell.swift */,
+				0D49A43422EFD974004F5E3B /* SCRecipesCollectionViewCell.xib */,
+			);
+			path = "Display View";
+			sourceTree = "<group>";
+		};
+		0D49A43622EFFB28004F5E3B /* Recipes Details */ = {
+			isa = PBXGroup;
+			children = (
+				0D49A43722EFFB46004F5E3B /* SCRecipesDetailsController.swift */,
+				0D49A43922EFFD8C004F5E3B /* SCRecipesDetailsController.xib */,
+				0D49A43F22F029D9004F5E3B /* SCRecipesMealCell.swift */,
+				0D49A44122F029E5004F5E3B /* SCRecipesMealCell.xib */,
+				0D49A44322F0311A004F5E3B /* SCRecipesMealFooterView.swift */,
+				0D49A44522F0319E004F5E3B /* SCRecipesMealFooterView.xib */,
+			);
+			path = "Recipes Details";
+			sourceTree = "<group>";
+		};
 		0D8BF71222EE6B2500057B44 /* Favourite */ = {
 			isa = PBXGroup;
 			children = (
@@ -379,6 +425,7 @@
 			children = (
 				0D973AB522EEDF2500946305 /* Meals */,
 				0D973AA222EEBEE100946305 /* SCRecipesListViewModel.swift */,
+				0D49A43B22F007A9004F5E3B /* SCRecipesViewModel.swift */,
 			);
 			path = Recipes;
 			sourceTree = "<group>";
@@ -601,6 +648,8 @@
 		0DE09EBB22E97B440012F2E3 /* Recipes */ = {
 			isa = PBXGroup;
 			children = (
+				0D49A43622EFFB28004F5E3B /* Recipes Details */,
+				0D49A42722EFBD55004F5E3B /* Display View */,
 				0DE09EBC22E97B440012F2E3 /* SCRecipesViewController.swift */,
 			);
 			path = Recipes;
@@ -842,7 +891,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0D49A43522EFD974004F5E3B /* SCRecipesCollectionViewCell.xib in Resources */,
 				0D973ACB22EEDF3200946305 /* 52960.json in Resources */,
+				0D49A44222F029E5004F5E3B /* SCRecipesMealCell.xib in Resources */,
 				0D09BBFF22EC193700AC7F02 /* SCSpeciesHealthCell.xib in Resources */,
 				0D973AD922EEDF3200946305 /* 52764.json in Resources */,
 				0D8BF71922EE776900057B44 /* SCFavouriteDisplayView.xib in Resources */,
@@ -857,16 +908,19 @@
 				0D09BC0322EC1F9F00AC7F02 /* SCSpeciesHealthHeaderView.xib in Resources */,
 				0D973AC922EEDF3200946305 /* 52887.json in Resources */,
 				0D973AD822EEDF3200946305 /* 52946.json in Resources */,
+				0D49A44622F0319E004F5E3B /* SCRecipesMealFooterView.xib in Resources */,
 				0DF4FF6E22EAC71E0087A528 /* SCSpeciesImagesCollectionView.xib in Resources */,
 				0D973AD322EEDF3200946305 /* 52936.json in Resources */,
 				0D973ACE22EEDF3200946305 /* 52773.json in Resources */,
 				0D973ACF22EEDF3200946305 /* 52823.json in Resources */,
 				0D973AD622EEDF3200946305 /* 52944.json in Resources */,
 				0D09BBFB22EC182500AC7F02 /* SCSpeciesHealthController.xib in Resources */,
+				0D49A43A22EFFD8C004F5E3B /* SCRecipesDetailsController.xib in Resources */,
 				0DF4FF5A22EA70070087A528 /* SCSpeciesDisplayView.xib in Resources */,
 				0D973AD722EEDF3200946305 /* 52959.json in Resources */,
 				0DF4FF7722EACA110087A528 /* SCSpeciesAboutController.storyboard in Resources */,
 				0D973AD522EEDF3200946305 /* 52821.json in Resources */,
+				0D49A43122EFD779004F5E3B /* SCRecipesDisplayView.xib in Resources */,
 				0DF4FF6522EAB6E40087A528 /* SCSpeciesDetailsController.xib in Resources */,
 				0D973AD122EEDF3200946305 /* 52918.json in Resources */,
 				0DF4FF7422EAC7D60087A528 /* SCImageCollectionViewCell.xib in Resources */,
@@ -911,11 +965,13 @@
 				"${PODS_ROOT}/Target Support Files/Pods-MyFishInfo/Pods-MyFishInfo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
+				"${BUILT_PRODUCTS_DIR}/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/DLSlideView/DLSlideView.framework",
 				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
 				"${BUILT_PRODUCTS_DIR}/GSKStretchyHeaderView/GSKStretchyHeaderView.framework",
 				"${BUILT_PRODUCTS_DIR}/HTMLString/HTMLString.framework",
 				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
+				"${BUILT_PRODUCTS_DIR}/MobilePlayer/MobilePlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/SCTableIndex/SCTableIndex.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SKPhotoBrowser/SKPhotoBrowser.framework",
@@ -928,11 +984,13 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnimatedCollectionViewLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLSlideView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSKStretchyHeaderView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTMLString.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MobilePlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCTableIndex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SKPhotoBrowser.framework",
@@ -997,7 +1055,10 @@
 				0DF4FF7522EAC7D60087A528 /* SCImageCollectionViewCell.swift in Sources */,
 				0DE09EDC22E97B450012F2E3 /* UIView+extension.swift in Sources */,
 				0DE09ED222E97B450012F2E3 /* UILabel+SCAddition.m in Sources */,
+				0D49A44422F0311A004F5E3B /* SCRecipesMealFooterView.swift in Sources */,
+				0D49A43C22F007A9004F5E3B /* SCRecipesViewModel.swift in Sources */,
 				0DE09EF122E97B450012F2E3 /* SCFavouriteViewController.swift in Sources */,
+				0D49A44022F029D9004F5E3B /* SCRecipesMealCell.swift in Sources */,
 				0DE09EEE22E97B450012F2E3 /* SCNavigationViewController.swift in Sources */,
 				0D8BF71B22EE782600057B44 /* SCFavouriteViewFlowLayout.swift in Sources */,
 				0DE09EC922E97B450012F2E3 /* InfoCommon.swift in Sources */,
@@ -1023,18 +1084,21 @@
 				0DE09ECF22E97B450012F2E3 /* NSString+SCAddition.m in Sources */,
 				0DE09ED722E97B450012F2E3 /* NSAttributedString+extension.swift in Sources */,
 				0DE09EF922E983520012F2E3 /* SCSpeciesDataItem.swift in Sources */,
+				0D49A43322EFD967004F5E3B /* SCRecipesCollectionViewCell.swift in Sources */,
 				0DE09ECC22E97B450012F2E3 /* NSObject+SCAddition.m in Sources */,
 				0DE09EE822E97B450012F2E3 /* UITableView+extension.swift in Sources */,
 				0DE09ED622E97B450012F2E3 /* UIImageView+extension.swift in Sources */,
 				0DE09ED522E97B450012F2E3 /* UIApplication+extension.swift in Sources */,
 				0D2EC93722ED719100897104 /* Model.xcdatamodeld in Sources */,
 				0DE09EE922E97B450012F2E3 /* SCMoreViewController.swift in Sources */,
+				0D49A42F22EFD71E004F5E3B /* SCRecipesDisplayView.swift in Sources */,
 				0DE09EF622E9811D0012F2E3 /* SCNetworkManager+extension.swift in Sources */,
 				0DE09EDF22E97B450012F2E3 /* Bundle+extension.swift in Sources */,
 				0D8BF71722EE76F800057B44 /* SCFavouriteDisplayView.swift in Sources */,
 				0DF4FF7122EAC79A0087A528 /* SCCollectionViewFlowLayout.swift in Sources */,
 				0DF4FF6022EA7FBE0087A528 /* SCSpeciesViewModel.swift in Sources */,
 				0DE09EEC22E97B450012F2E3 /* SCSpeciesViewController.swift in Sources */,
+				0D49A43822EFFB46004F5E3B /* SCRecipesDetailsController.swift in Sources */,
 				0D973AA022EEAE9800946305 /* SCSpeciesImageGalleryItem.swift in Sources */,
 				0DE09EE122E97B450012F2E3 /* UITabBarController+extension.swift in Sources */,
 				0D09BBF922EC17D500AC7F02 /* SCSpeciesHealthController.swift in Sources */,
