@@ -23,7 +23,6 @@ class SCRecipesDetailsController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setupUI()
-        loadData()
     }
     @objc private func clickVideoButton(){
         guard let videoUrl = viewModel?.videoUrl else{
@@ -34,7 +33,6 @@ class SCRecipesDetailsController: UIViewController {
         playerVC.activityItems = [videoUrl]
         present(playerVC, animated: true, completion: nil)
     }
-        
 }
 private extension SCRecipesDetailsController{
     func setupUI(){
@@ -50,9 +48,6 @@ private extension SCRecipesDetailsController{
         footerView.instructionLabel.text = viewModel?.instructions
         tableView.tableFooterView = footerView
        
-    }
-    func loadData(){
-        
     }
 }
 extension SCRecipesDetailsController: UITableViewDelegate, UITableViewDataSource{

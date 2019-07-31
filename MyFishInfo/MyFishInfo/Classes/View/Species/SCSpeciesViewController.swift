@@ -8,9 +8,10 @@
 
 import UIKit
 import SKPhotoBrowser
+import SVProgressHUD
 
 class SCSpeciesViewController: UIViewController {
-    private let listViewModel = SCSpeciesListViewModel()
+    private var listViewModel = SCSpeciesListViewModel()
     private let displayView = SCSpeciesDisplayView.displayView()
     
     override func viewDidLoad() {
@@ -25,9 +26,11 @@ private extension SCSpeciesViewController{
         displayView.delegate = self
     }
     func loadData(){
+        SVProgressHUD.show()
         listViewModel.loadSpeciesData { [weak self](isSuccess) in
             self?.displayView.viewModels = self?.listViewModel.viewModels
             self?.displayView.tableIndex.setView(self?.listViewModel.speciesName ?? [])
+            SVProgressHUD.dismiss()
         }
     }
 }

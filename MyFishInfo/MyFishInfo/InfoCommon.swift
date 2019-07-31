@@ -29,4 +29,5 @@ struct InfoCommon{
     static let recipesUrl = "https://www.themealdb.com/api/json/v1/1/filter.php?c=Seafood"
     static let mealUrl = "https://www.themealdb.com/api/json/v1/1/lookup.php"
     static let SCUpdateFavouriteSpecies = "SCUpdateFavouriteSpecies"
+    static let newsUrl = "https://www.fisheries.noaa.gov/news-and-announcements/news"
 }

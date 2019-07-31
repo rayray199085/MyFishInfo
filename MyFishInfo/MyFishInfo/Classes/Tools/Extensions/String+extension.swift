@@ -138,3 +138,18 @@ extension String {
         return ceil(boundingBox.width)
     }
 }
+extension String{
+    static func checkWhetherFileExists(directoryPath: String, fileName: String)->Bool{
+        let url = NSURL(fileURLWithPath: directoryPath)
+        if let pathComponent = url.appendingPathComponent(fileName) {
+            let filePath = pathComponent.path
+            let fileManager = FileManager.default
+            if fileManager.fileExists(atPath: filePath) {
+                return true
+            } else {
+                return false
+            }
+        }
+        return false
+    }
+}

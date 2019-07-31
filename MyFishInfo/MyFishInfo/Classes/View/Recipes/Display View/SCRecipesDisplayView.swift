@@ -52,7 +52,6 @@ extension SCRecipesDisplayView: UICollectionViewDelegate, UICollectionViewDataSo
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdenfier, for: indexPath) as! SCRecipesCollectionViewCell
-       
         cell.item = meals?[indexPath.item]
         return cell
     }

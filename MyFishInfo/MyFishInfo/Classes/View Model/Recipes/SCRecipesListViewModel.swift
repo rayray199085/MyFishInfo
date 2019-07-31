@@ -14,8 +14,8 @@ class SCRecipesListViewModel{
     
     func loadRecipesListData(completion: @escaping (_ isSuccess: Bool)->()){
         guard let path = Bundle.main.path(forResource: "recipes", ofType: "json"),
-            let data = try? Data(contentsOf: URL(fileURLWithPath: path)),
-            let recipesData = try? JSONDecoder().decode(SCRecipesData.self, from: data) else{
+              let data = try? Data(contentsOf: URL(fileURLWithPath: path)),
+              let recipesData = try? JSONDecoder().decode(SCRecipesData.self, from: data) else{
                 completion(false)
                 return
         }

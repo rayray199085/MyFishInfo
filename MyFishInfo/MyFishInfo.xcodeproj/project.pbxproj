@@ -103,7 +103,6 @@
 		0DE09EE622E97B450012F2E3 /* UIPageControl+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EB422E97B440012F2E3 /* UIPageControl+extension.swift */; };
 		0DE09EE722E97B450012F2E3 /* UIBarButtonItem+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EB522E97B440012F2E3 /* UIBarButtonItem+extension.swift */; };
 		0DE09EE822E97B450012F2E3 /* UITableView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EB622E97B440012F2E3 /* UITableView+extension.swift */; };
-		0DE09EE922E97B450012F2E3 /* SCMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EBA22E97B440012F2E3 /* SCMoreViewController.swift */; };
 		0DE09EEA22E97B450012F2E3 /* SCRecipesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EBC22E97B440012F2E3 /* SCRecipesViewController.swift */; };
 		0DE09EEB22E97B450012F2E3 /* SCNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EBE22E97B440012F2E3 /* SCNewsViewController.swift */; };
 		0DE09EEC22E97B450012F2E3 /* SCSpeciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09EC022E97B440012F2E3 /* SCSpeciesViewController.swift */; };
@@ -130,6 +129,9 @@
 		0DF4FF7522EAC7D60087A528 /* SCImageCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4FF7322EAC7D50087A528 /* SCImageCollectionViewCell.swift */; };
 		0DF4FF7722EACA110087A528 /* SCSpeciesAboutController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DF4FF7622EACA110087A528 /* SCSpeciesAboutController.storyboard */; };
 		0DF4FF7922EAD36C0087A528 /* UIScrollView+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF4FF7822EAD36C0087A528 /* UIScrollView+extension.swift */; };
+		0DF963C222F1593900FB8729 /* SCMoreTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0DF963BF22F1593800FB8729 /* SCMoreTableViewCell.xib */; };
+		0DF963C322F1593900FB8729 /* SCMoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF963C022F1593800FB8729 /* SCMoreViewController.swift */; };
+		0DF963C422F1593900FB8729 /* SCMoreTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DF963C122F1593900FB8729 /* SCMoreTableViewCell.swift */; };
 		D8D64EFEFDCBA15B69C52BF9 /* Pods_MyFishInfo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC9D8A0DEA07D87441720EA2 /* Pods_MyFishInfo.framework */; };
 /* End PBXBuildFile section */
 
@@ -265,7 +267,6 @@
 		0DE09EB422E97B440012F2E3 /* UIPageControl+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIPageControl+extension.swift"; sourceTree = "<group>"; };
 		0DE09EB522E97B440012F2E3 /* UIBarButtonItem+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIBarButtonItem+extension.swift"; sourceTree = "<group>"; };
 		0DE09EB622E97B440012F2E3 /* UITableView+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+extension.swift"; sourceTree = "<group>"; };
-		0DE09EBA22E97B440012F2E3 /* SCMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMoreViewController.swift; sourceTree = "<group>"; };
 		0DE09EBC22E97B440012F2E3 /* SCRecipesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCRecipesViewController.swift; sourceTree = "<group>"; };
 		0DE09EBE22E97B440012F2E3 /* SCNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCNewsViewController.swift; sourceTree = "<group>"; };
 		0DE09EC022E97B440012F2E3 /* SCSpeciesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCSpeciesViewController.swift; sourceTree = "<group>"; };
@@ -292,6 +293,9 @@
 		0DF4FF7322EAC7D50087A528 /* SCImageCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCImageCollectionViewCell.swift; sourceTree = "<group>"; };
 		0DF4FF7622EACA110087A528 /* SCSpeciesAboutController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SCSpeciesAboutController.storyboard; sourceTree = "<group>"; };
 		0DF4FF7822EAD36C0087A528 /* UIScrollView+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIScrollView+extension.swift"; sourceTree = "<group>"; };
+		0DF963BF22F1593800FB8729 /* SCMoreTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SCMoreTableViewCell.xib; sourceTree = "<group>"; };
+		0DF963C022F1593800FB8729 /* SCMoreViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMoreViewController.swift; sourceTree = "<group>"; };
+		0DF963C122F1593900FB8729 /* SCMoreTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SCMoreTableViewCell.swift; sourceTree = "<group>"; };
 		214001B0B5EAA33F80DB607F /* Pods-MyFishInfo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFishInfo.debug.xcconfig"; path = "Target Support Files/Pods-MyFishInfo/Pods-MyFishInfo.debug.xcconfig"; sourceTree = "<group>"; };
 		8F2A6CB8E6F802EA114336A5 /* Pods-MyFishInfo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MyFishInfo.release.xcconfig"; path = "Target Support Files/Pods-MyFishInfo/Pods-MyFishInfo.release.xcconfig"; sourceTree = "<group>"; };
 		DC9D8A0DEA07D87441720EA2 /* Pods_MyFishInfo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MyFishInfo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -640,7 +644,9 @@
 		0DE09EB922E97B440012F2E3 /* More */ = {
 			isa = PBXGroup;
 			children = (
-				0DE09EBA22E97B440012F2E3 /* SCMoreViewController.swift */,
+				0DF963C122F1593900FB8729 /* SCMoreTableViewCell.swift */,
+				0DF963BF22F1593800FB8729 /* SCMoreTableViewCell.xib */,
+				0DF963C022F1593800FB8729 /* SCMoreViewController.swift */,
 			);
 			path = More;
 			sourceTree = "<group>";
@@ -899,6 +905,7 @@
 				0D8BF71922EE776900057B44 /* SCFavouriteDisplayView.xib in Resources */,
 				0D973ACD22EEDF3200946305 /* 52802.json in Resources */,
 				0DE09EFB22E9925B0012F2E3 /* species.json in Resources */,
+				0DF963C222F1593900FB8729 /* SCMoreTableViewCell.xib in Resources */,
 				0D09BC0E22EC375E00AC7F02 /* SCSpeciesScienceCell.xib in Resources */,
 				0D973ACA22EEDF3200946305 /* 52953.json in Resources */,
 				0DE09EED22E97B450012F2E3 /* main.json in Resources */,
@@ -1062,6 +1069,7 @@
 				0DE09EEE22E97B450012F2E3 /* SCNavigationViewController.swift in Sources */,
 				0D8BF71B22EE782600057B44 /* SCFavouriteViewFlowLayout.swift in Sources */,
 				0DE09EC922E97B450012F2E3 /* InfoCommon.swift in Sources */,
+				0DF963C322F1593900FB8729 /* SCMoreViewController.swift in Sources */,
 				0DE09ECD22E97B450012F2E3 /* UIColor+WJObjcSugar.m in Sources */,
 				0DF4FF6322EAB6CC0087A528 /* SCSpeciesDetailsController.swift in Sources */,
 				0DE09ED922E97B450012F2E3 /* UIWindow+extension.swift in Sources */,
@@ -1090,7 +1098,6 @@
 				0DE09ED622E97B450012F2E3 /* UIImageView+extension.swift in Sources */,
 				0DE09ED522E97B450012F2E3 /* UIApplication+extension.swift in Sources */,
 				0D2EC93722ED719100897104 /* Model.xcdatamodeld in Sources */,
-				0DE09EE922E97B450012F2E3 /* SCMoreViewController.swift in Sources */,
 				0D49A42F22EFD71E004F5E3B /* SCRecipesDisplayView.swift in Sources */,
 				0DE09EF622E9811D0012F2E3 /* SCNetworkManager+extension.swift in Sources */,
 				0DE09EDF22E97B450012F2E3 /* Bundle+extension.swift in Sources */,
@@ -1108,6 +1115,7 @@
 				0D2EC93822ED719100897104 /* AppDelegate+extension.swift in Sources */,
 				0DE09ED022E97B450012F2E3 /* UIScreen+UISCreen_extenshion.m in Sources */,
 				0DE09ED422E97B450012F2E3 /* SCNetworkManager.swift in Sources */,
+				0DF963C422F1593900FB8729 /* SCMoreTableViewCell.swift in Sources */,
 				0DE09ECE22E97B450012F2E3 /* UIImageView+SCAddition.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1277,6 +1285,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = MyFishInfo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1286,7 +1295,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyFishInfo/Info-Bridge.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -1296,6 +1305,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = MyFishInfo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -1305,7 +1315,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyFishInfo/Info-Bridge.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

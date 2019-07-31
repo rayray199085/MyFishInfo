@@ -76,11 +76,13 @@ class CoreDataManager: NSObject {
         NotificationCenter.default.post(name: NSNotification.Name(InfoCommon.SCUpdateFavouriteSpecies), object: nil)
     }
     
-    func deleteAllPerson() {
+    func deleteAllSpecies() {
         let result = getAllSpeciesItems()
         for item in result {
             context.delete(item)
         }
         saveContext()
+        
+        NotificationCenter.default.post(name: NSNotification.Name(InfoCommon.SCUpdateFavouriteSpecies), object: nil)
     }
 }
