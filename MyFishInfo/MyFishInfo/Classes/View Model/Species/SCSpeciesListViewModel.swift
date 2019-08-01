@@ -19,8 +19,8 @@ class SCSpeciesListViewModel{
         
         DispatchQueue.global().async {
             if let path = Bundle.main.path(forResource: "species", ofType: "json"),
-                let data = try? Data(contentsOf: URL(fileURLWithPath: path)),
-                var speciesItems = try? JSONDecoder().decode([SCSpeciesDataItem].self, from: data){
+               let data = try? Data(contentsOf: URL(fileURLWithPath: path)),
+               var speciesItems = try? JSONDecoder().decode([SCSpeciesDataItem].self, from: data){
                 speciesItems.sort(by: {($0.speciesName ?? "") < ($1.speciesName ?? "")})
                 var speciesName = [String]()
                 var viewModels = [SCSpeciesViewModel]()
@@ -31,6 +31,7 @@ class SCSpeciesListViewModel{
                 names = speciesName
                 tempViewModels = viewModels
             }
+            
             DispatchQueue.main.async(execute: {
                 self.viewModels = tempViewModels
                 self.speciesName = names

@@ -9,7 +9,7 @@
 import UIKit
 
 private let reuseIdentifier = "more_cell"
-private let appId = "1474043634"
+private let appId = "1474927325"
 private let emailAddress = "stephen.cao0805@outlook.com"
 
 class SCMoreViewController: UIViewController {
@@ -18,7 +18,7 @@ class SCMoreViewController: UIViewController {
         ["title": "Contact us", "iconName": "btn_email","content":"You can email us if you have any comments, suggestions or even ideas.\nYour opinion is very important to us."],
         ["title": "Fork us on GitHub", "iconName": "btn_fork", "content":"This is a free and open source application.\nIf you are interested in this app and want to make it become better, contact us to know more."],
         ["title": "Remove all favourite species: ", "iconName": "btn_remove", "content":"Select and confirm to delete all your favourite records."],
-        ["title": "About", "iconName": "btn_about", "content": "Produced by: Rui Cao\nVersion: v1.0.0\nCopyright © 2019 Rui Cao. All rights reserved."]]
+        ["title": "About", "iconName": "btn_about", "content": "Produced by: Rui Cao\nVersion: v1.0.2\nCopyright © 2019 Rui Cao. All rights reserved."]]
     
     private let tableView = UITableView(frame: UIScreen.main.bounds)
     override func viewDidLoad() {

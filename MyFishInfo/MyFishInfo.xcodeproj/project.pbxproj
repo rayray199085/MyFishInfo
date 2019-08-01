@@ -68,7 +68,6 @@
 		0D973ADB22EEDF3200946305 /* 52809.json in Resources */ = {isa = PBXBuildFile; fileRef = 0D973AC822EEDF3200946305 /* 52809.json */; };
 		0DE09E5822E97ACB0012F2E3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09E5722E97ACB0012F2E3 /* AppDelegate.swift */; };
 		0DE09E5F22E97ACC0012F2E3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0DE09E5E22E97ACC0012F2E3 /* Assets.xcassets */; };
-		0DE09E6222E97ACC0012F2E3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0DE09E6022E97ACC0012F2E3 /* LaunchScreen.storyboard */; };
 		0DE09E6D22E97ACC0012F2E3 /* MyFishInfoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09E6C22E97ACC0012F2E3 /* MyFishInfoTests.swift */; };
 		0DE09E7822E97ACC0012F2E3 /* MyFishInfoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09E7722E97ACC0012F2E3 /* MyFishInfoUITests.swift */; };
 		0DE09EC922E97B450012F2E3 /* InfoCommon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DE09E8622E97B440012F2E3 /* InfoCommon.swift */; };
@@ -215,7 +214,6 @@
 		0DE09E5422E97ACB0012F2E3 /* MyFishInfo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyFishInfo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE09E5722E97ACB0012F2E3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0DE09E5E22E97ACC0012F2E3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0DE09E6122E97ACC0012F2E3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0DE09E6322E97ACC0012F2E3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0DE09E6822E97ACC0012F2E3 /* MyFishInfoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFishInfoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0DE09E6C22E97ACC0012F2E3 /* MyFishInfoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFishInfoTests.swift; sourceTree = "<group>"; };
@@ -527,7 +525,6 @@
 			isa = PBXGroup;
 			children = (
 				0DE09E5E22E97ACC0012F2E3 /* Assets.xcassets */,
-				0DE09E6022E97ACC0012F2E3 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -910,7 +907,6 @@
 				0D973ACA22EEDF3200946305 /* 52953.json in Resources */,
 				0DE09EED22E97B450012F2E3 /* main.json in Resources */,
 				0D973AD422EEDF3200946305 /* 52836.json in Resources */,
-				0DE09E6222E97ACC0012F2E3 /* LaunchScreen.storyboard in Resources */,
 				0D8BF71F22EE7BCB00057B44 /* SCFavouriteCollectionViewCell.xib in Resources */,
 				0D09BC0322EC1F9F00AC7F02 /* SCSpeciesHealthHeaderView.xib in Resources */,
 				0D973AC922EEDF3200946305 /* 52887.json in Resources */,
@@ -974,10 +970,8 @@
 				"${BUILT_PRODUCTS_DIR}/AlamofireNetworkActivityIndicator/AlamofireNetworkActivityIndicator.framework",
 				"${BUILT_PRODUCTS_DIR}/AnimatedCollectionViewLayout/AnimatedCollectionViewLayout.framework",
 				"${BUILT_PRODUCTS_DIR}/DLSlideView/DLSlideView.framework",
-				"${BUILT_PRODUCTS_DIR}/FBRetainCycleDetector/FBRetainCycleDetector.framework",
 				"${BUILT_PRODUCTS_DIR}/GSKStretchyHeaderView/GSKStretchyHeaderView.framework",
 				"${BUILT_PRODUCTS_DIR}/HTMLString/HTMLString.framework",
-				"${BUILT_PRODUCTS_DIR}/MLeaksFinder/MLeaksFinder.framework",
 				"${BUILT_PRODUCTS_DIR}/MobilePlayer/MobilePlayer.framework",
 				"${BUILT_PRODUCTS_DIR}/SCTableIndex/SCTableIndex.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
@@ -993,10 +987,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireNetworkActivityIndicator.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AnimatedCollectionViewLayout.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DLSlideView.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBRetainCycleDetector.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GSKStretchyHeaderView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HTMLString.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MLeaksFinder.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MobilePlayer.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SCTableIndex.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
@@ -1151,17 +1143,6 @@
 		};
 /* End PBXTargetDependency section */
 
-/* Begin PBXVariantGroup section */
-		0DE09E6022E97ACC0012F2E3 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0DE09E6122E97ACC0012F2E3 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
-
 /* Begin XCBuildConfiguration section */
 		0DE09E7A22E97ACC0012F2E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -1284,7 +1265,9 @@
 			baseConfigurationReference = 214001B0B5EAA33F80DB607F /* Pods-MyFishInfo.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Rui Cao (3CB5U428B8)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = MyFishInfo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1293,9 +1276,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephencao.project.MyFishInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "My Fish Info";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyFishInfo/Info-Bridge.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
@@ -1304,7 +1288,9 @@
 			baseConfigurationReference = 8F2A6CB8E6F802EA114336A5 /* Pods-MyFishInfo.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_STYLE = Automatic;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Rui Cao (3CB5U428B8)";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 3CB5U428B8;
 				INFOPLIST_FILE = MyFishInfo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -1313,9 +1299,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.stephencao.project.MyFishInfo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "My Fish Info";
 				SWIFT_OBJC_BRIDGING_HEADER = "MyFishInfo/Info-Bridge.h";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = 1;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
